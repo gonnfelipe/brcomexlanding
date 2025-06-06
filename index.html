@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Links - Seu Nome</title>
+  <style>
+    :root {
+      --verde-oliva: #556B2F;
+      --amarelo-dourado: #FFD700;
+      --link-bg: rgba(255, 255, 255, 0.9);
+      --link-hover-bg: rgba(255, 255, 255, 0.7);
+      --font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family);
+      background: url('navio.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--verde-oliva);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      backdrop-filter: blur(2px);
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 16px;
+      padding: 30px 20px;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid var(--amarelo-dourado);
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 26px;
+      color: var(--verde-oliva);
+    }
+
+    p.bio {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .link-button {
+      display: block;
+      background-color: var(--link-bg);
+      color: var(--verde-oliva);
+      text-decoration: none;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 2px solid var(--amarelo-dourado);
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .link-button:hover {
+      background-color: var(--link-hover-bg);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="foto.jpg" alt="Sua Foto" class="profile-img" />
+    <h1>Seu Nome</h1>
+    <p class="bio">Breve descrição sobre você ou seu trabalho.</p>
+
+    <a href="https://instagram.com/seuusuario" class="link-button" target="_blank">📷 Instagram</a>
+    <a href="https://linkedin.com/in/seuusuario" class="link-button" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/seuusuario" class="link-button" target="_blank">🐙 GitHub</a>
+    <a href="mailto:seu@email.com" class="link-button" target="_blank">✉️ E-mail</a>
+
+    <footer>
+      Feito com ❤️ por Você
+    </footer>
+  </div>
+</body>
+</html>
